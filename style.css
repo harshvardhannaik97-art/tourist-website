@@ -1,0 +1,188 @@
+/* ----- BASIC RESET ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* ----- NAVBAR ----- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+.logo span { color: #e63946; }
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+
+/* ----- HERO SECTION ----- */
+.hero {
+    height: 90vh;
+    background: url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da")
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.explore-btn {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #e63946;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ----- PLACES SECTION ----- */
+.places-section {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.places-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.place-card {
+    width: 300px;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.place-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+}
+
+/* ----- ABOUT SECTION ----- */
+.about-section {
+    padding: 60px 40px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/* ----- CONTACT SECTION ----- */
+.contact-section {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #1d3557;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1d3557;
+    color: #fff; 
+
+/* ----- SOCIAL MEDIA ICONS ----- */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    background: #e63946;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #1d3557;
+    transform: scale(1.1);
+}
+
+
+
+}
+
+/* ----- RESPONSIVE MENU ----- */
+@media (max-width: 768px) {
+    .nav-links { display: none; flex-direction: column; }
+
+    .menu-btn { display: block; }
+}

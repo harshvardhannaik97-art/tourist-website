@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore India - Tourist Guide</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Explore<span>India</span></h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Discover the Beauty of India</h1>
+            <p>From mountains to beaches — explore the culture, heritage, and nature.</p>
+            <button onclick="scrollToPlaces()" class="explore-btn">Explore Places</button>
+        </div>
+    </section>
+
+    <!-- PLACES SECTION -->
+    <section id="places" class="places-section">
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="places-container">
+
+            <div class="place-card">
+                <img src="./taj_new_contant_edited.jpg" alt="Taj Mahal">
+                <h3>Taj Mahal - Agra</h3>
+                <p>A symbol of love and one of the Seven Wonders of the World.</p>
+            </div>
+
+            <div class="place-card">
+                <img src="./images.jpg" alt="Jaipur">
+                <h3>Jaipur - Rajasthan</h3>
+                <p>The Pink City known for forts, palaces, and royal heritage.</p>
+            </div>
+
+            <div class="place-card">
+                <img src="./shutterstock2454866115.avif" alt="Kerala">
+                <h3>Kerala Backwaters</h3>
+                <p>Calm waterways and nature’s true paradise in South India.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Us</h2>
+        <p>
+            ExploreIndia is a student-made tourist website built to showcase the
+            beautiful locations of India. Our aim is to help travelers discover new
+            destinations and learn more about our culture and history.
+        </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+
+        <form class="contact-form" onsubmit="return submitForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="form-status"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 ExploreIndia. Designed for Web Development ISE Project.</p>
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
